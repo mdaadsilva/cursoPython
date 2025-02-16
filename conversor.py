@@ -1,3 +1,4 @@
+# Funções de conversão
 def metros_para_quilometros(metros):
     return metros / 1000
 
@@ -10,13 +11,16 @@ def celsius_para_fahrenheit(celsius):
 def fahrenheit_para_celsius(fahrenheit):
     return (fahrenheit - 32) * 5/9
 
+# Função principal para o menu
 def menu():
     print("Bem-vindo ao Conversor de Unidades!")
     print("Escolha uma opção:")
     print("1. Conversão de Distâncias")
     print("2. Conversão de Temperaturas")
+    
     print("3. Sair")
 
+# Função para conversão de distâncias
 def converter_distancias():
     print("Escolha uma conversão de distância:")
     print("1. Metros para Quilômetros")
@@ -32,6 +36,7 @@ def converter_distancias():
     else:
         print("Opção inválida!")
 
+# Função para conversão de temperaturas
 def converter_temperaturas():
     print("Escolha uma conversão de temperatura:")
     print("1. Celsius para Fahrenheit")
@@ -47,6 +52,7 @@ def converter_temperaturas():
     else:
         print("Opção inválida!")
 
+# Função para iniciar o programa
 def iniciar():
     while True:
         menu()
@@ -62,4 +68,5 @@ def iniciar():
         else:
             print("Opção inválida. Tente novamente.")
 
+# Iniciar o programa
 iniciar()
